@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('menu').click(function() {
+    $('#menu').click(function() {
         $(this).toggleClass('fa-times');
         $('header').toggleClass('toggle');
     });
@@ -18,11 +18,8 @@ $(document).ready(function() {
 
     });
 
-
-
-// smooth scrolling
-
-$('a[href*="#"]').on('click', function(e) {
+    // smooth scrolling
+    $('a[href*="#"]').on('click', function(e) {
     
         e.preventDefault();
     
@@ -34,6 +31,12 @@ $('a[href*="#"]').on('click', function(e) {
             500,
             'linear'
         );
-});
+    });
+
 
 });
+
+
+
+
+
